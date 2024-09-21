@@ -1365,7 +1365,7 @@
                     <div class="col-lg-6 mx-auto">
                         <h1 class="text-white mb-3">Book A Tour Deals</h1>
                         <p class="text-white mb-4">Get  Your First Adventure with Haven Hoildoys safaris. Get More Deal Offers Here.</p>
-                        <form method="POST" action="tours.php"> 
+                        <form onsubmit="sendEmail(), reset(); return false">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -1380,55 +1380,45 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="number" class="form-control bg-white border-0" id="number_of_days" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Number of days</label>
+                                    <div class="form-floating date" id="number_of_days " data-target-input="nearest">
+                                        <input type="number" class="form-control bg-white border-0" id="number_of_days" placeholder="Number of days" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="datetime">Number of Days</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-white border-0" id="select1">
-                                            <option value="1">uganda</option>
-                            
-                                        </select>
-                                        <label for="select1">Destination</label>
+                                    <div class="">
+                                       
+                                        <label class="text-white" for="destination">Destination</label>
+                                        <input class="form-control bg-white border-0" type="text" id="destination" placeholder="destination" >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-white border-0" id="SelectPerson">
-                                            <option value="1"> 1</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                             <option value="3"> 4</option>
-                                             <option value="3"> 6 +</option>
-                                                                           
-                                             </select>
-                                        <label for="SelectPerson">Number of people</label>
+                                    <div class="">
+                                       
+                                        <label class="text-white"  for="number">Number of people</label>
+                                        <input class="form-control bg-white border-0" type="number" id="number_of_people" placeholder="number of people">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select bg-white border-0" id="CategoriesSelect">
-                                            <option value="1">Kids</option>
-                                            <option value="2">single</option>
-                                            <option value="3">couple</option>
-                                            <option value="3">family</option>
-                                        </select>
-                                        <label for="CategoriesSelect">Categories</label>
+                                    <div class="">
+                                        
+                                        <label class="text-white" for="Categoriest">Categories</label>
+                                        <input class="form-control bg-white border-0" type="text" id="Categories"  placeholder="Game Driving, gorilla Trekking,boat cruise, chimpanzeetracking, camping">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control bg-white border-0" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
+                                    <div class="">
+                                        <label class="text-white" for="message">message</label>
+                                        <textarea class="form-control bg-white border-0" placeholder="how can we help you? " id="message" style="height: 100px"></textarea>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">send</button>
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
