@@ -342,24 +342,23 @@
                     </div>
                     <div class="col-lg-6 mx-auto">
                         <h1 class="text-white mb-3">Book A Tour Deals</h1>
-                        <p class="text-white mb-4">Get your Adventure Trip With Haven Holidays Safaris. Get More Deal Offers Here.</p>
                         <form action="https://formspree.io/f/xldrqeey" method="post">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-white border-0" id="name" name="NAME" placeholder="Your Name">
+                                        <input type="text" class="form-control bg-white border-0" name="NAME" id="name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-white border-0" id="email" name="Email" placeholder="Your Email">
+                                        <input type="email" class="form-control bg-white border-0" id="email"  name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="number_of_days " data-target-input="nearest">
-                                        <input type="number" name="Days" class="form-control bg-white border-0" id="number_of_days" placeholder="Number of days" data-target="#date3" data-toggle="datetimepicker" />
+                                        <input type="number" class="form-control bg-white border-0" name="Days" id="number_of_days" placeholder="Number of days" data-target="#date3" data-toggle="datetimepicker" required >
                                         <label for="datetime">Number of Days</label>
                                     </div>
                                 </div>
@@ -367,27 +366,27 @@
                                     <div class="">
                                        
                                         <label class="text-white" for="destination">Destination</label>
-                                        <input class="form-control bg-white border-0" type="text" name="destination" id="destination" placeholder="destination" >
+                                        <input class="form-control bg-white border-0" type="text" name="Designation" id="destination" placeholder="destination"required >
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="">
                                        
                                         <label class="text-white"  for="number">Number of people</label>
-                                        <input class="form-control bg-white border-0" type="number" name="Number" id="number_of_people" placeholder="number of people">
+                                        <input class="form-control bg-white border-0" type="number" name="Number" id="number_of_people" placeholder="number of people" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="">
                                         
                                         <label class="text-white" for="Categoriest">Categories</label>
-                                        <input class="form-control bg-white border-0" type="text" id="Categories" name="Categories"  placeholder="Game Driving, gorilla Trekking,boat cruise, chimpanzeetracking, camping">
+                                        <input class="form-control bg-white border-0" type="text" name="Categories" id="Categories"  placeholder="Game Driving, gorilla Trekking,boat cruise, chimpanzeetracking, camping" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="">
                                         <label class="text-white" for="message">message</label>
-                                        <textarea class="form-control bg-white border-0" placeholder="how can we help you? " id="message" name="Message" style="height: 100px"></textarea>
+                                        <textarea class="form-control bg-white border-0" name="Message" placeholder="how can we help you? " id="message" style="height: 100px" required></textarea>
                                         
                                     </div>
                                 </div>
@@ -395,7 +394,7 @@
                                     <button class="btn btn-primary text-white w-100 py-3" type="submit">send</button>
                                 </div>
                             </div>
-                        </form>
+                        </form>  
                     </div>
                 </div>
             </div>
