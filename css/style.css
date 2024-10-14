@@ -1256,6 +1256,10 @@
     font-size: 2rem;
 
 }
+#queen{
+    background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/elizabeth.jpg);
+    background-size: cover;
+}
 .accordion-body{
     background-color: rgb(204, 204, 211);
     
