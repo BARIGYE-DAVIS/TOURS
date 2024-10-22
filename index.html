@@ -1369,63 +1369,45 @@
                         <h1 class="text-white mb-3">Book A Tour Deals</h1>
                         <p class="text-white mb-4">Get  Your First Adventure with Calm Africa Safaris. Get More Deal Offers Here.</p>
                         <form action="https://formspree.io/f/xldrqeey" method="post">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control bg-white border-0" name="NAME" id="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control bg-white border-0" id="email"  name="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating date" id="number_of_days " data-target-input="nearest">
-                                        <input type="number" class="form-control bg-white border-0" name="Days" id="number_of_days" placeholder="Number of days" data-target="#date3" data-toggle="datetimepicker" required >
-                                        <label for="datetime">Number of Days</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="">
-                                       
-                                        <label class="text-white" for="destination">Destination</label>
-                                        <input class="form-control bg-white border-0" type="text" name="Designation" id="destination" placeholder="destination"required >
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="">
-                                       
-                                        <label class="text-white"  for="number">Number of people</label>
-                                        <input class="form-control bg-white border-0" type="number" name="Number" id="number_of_people" placeholder="number of people" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="">
-                                        
-                                        <label class="text-white" for="Categoriest">Categories</label>
-                                        <input class="form-control bg-white border-0" type="text" name="Categories" id="Categories"  placeholder="Game Driving, gorilla Trekking,boat cruise, chimpanzeetracking, camping" required>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="">
-                                        <label class="text-white" for="message">message</label>
-                                        <textarea class="form-control bg-white border-0" name="Message" placeholder="how can we help you? " id="message" style="height: 100px" required></textarea>
-                                        
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary text-white w-100 py-3" type="submit">send</button>
-                                </div>
+                           
+                            <div class="form-group">
+                                <label for="name" class="text-white">Full Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
-                        </form>  
-
+            
+                            <div class="form-group">
+                                <label for="email" class="text-white">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="phone" class="text-white">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="tourDate" class="text-white">Preferred Tour Date:</label>
+                                <input type="date" class="form-control" id="tourDate" name="tourDate" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="groupSize" class="text-white">Number of People:</label>
+                                <input type="number" class="form-control" id="groupSize" name="groupSize" min="1" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="preferences" class="text-white">Tour Preferences:</label>
+                                <textarea class="form-control" id="preferences" name="preferences" rows="4" placeholder="e.g., nature, history, etc."></textarea>
+                            </div>
+            
+                            <button type="submit" class="btn btn-success m-2">Submit Request</button>
+                        </form>
+            
                     </div>
                 </div>
             </div>
         </div>
+     
         <!-- Tour Booking End -->
 
         <!-- Travel Guide Start -->
