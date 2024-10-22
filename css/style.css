@@ -1260,6 +1260,11 @@
     background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/elizabeth.jpg);
     background-size: cover;
 }
+
+#seven1{
+    background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/Climbimg\ lion.jpg);
+    background-size: cover;
+}
 #ten1{
     background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/Climbimg\ lion.jpg);
     background-size: cover;
