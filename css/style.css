@@ -394,7 +394,7 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/BWINDI.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1277,6 +1277,10 @@
 .highlights{
     background-color: aquamarine;
     margin:  auto 2rem;
+}
+#back{
+    background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/mburo4.jpg);
+    background-size: cover;
 }
 #twelve{
     background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/elizabeth4.jpg);
