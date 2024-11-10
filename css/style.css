@@ -1319,3 +1319,11 @@ font-size: 20px;
     transition: 10s ease;
     
 }
+#card {
+    background-color: rgb(45, 65, 58);
+    width: 25rem;
+    height: 30rem;
+    float: right;
+    
+
+}
