@@ -21,6 +21,33 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Disable text selection */
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+        }
+    </style>
+        <script>
+            // Disable right-click
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });
+        
+            // Disable copy and show alert
+            document.addEventListener('copy', function(e) {
+                e.preventDefault();
+                alert('Copying content is not allowed.');
+            });
+        
+            // Disable cut and show alert
+            document.addEventListener('cut', function(e) {
+                e.preventDefault();
+                alert('Cutting content is not allowed.');
+            });
+        </script>
 </head>
 <body>
    
@@ -68,6 +95,8 @@
                         <a href="PIMATES.HTML" class="dropdown-item"> 7 Days safari</a>
                         <a href="10 days.html" class="dropdown-item">9 Days </a>
                         <a href="12 Day.html" class="dropdown-item"> 12 days safari</a>
+                        <a href="14 days.html" class="dropdown-item"> 14 adys Adventurere safari</a>
+                        <a href="15days.html" class="dropdown-item">15 days safari</a>
                      
                     </div>
                 </div>
