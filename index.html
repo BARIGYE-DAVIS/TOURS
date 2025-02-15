@@ -54,13 +54,14 @@
                 // Disable cut and show alert
                 document.addEventListener('cut', function(e) {
                     e.preventDefault();
-                    alert('Cutting content is not allowed.');
+                    return('Cutting content is not allowed.');
                 });
             </script>
     </head>
 
-    <body>
-
+    <body class="">
+      <!-- Include header using JavaScript -->
+ 
         <!-- Spinner End -->
 
         <!-- Topbar Start -->
@@ -393,58 +394,59 @@
             </div>
         </div>
         
-        <h1 class="text-center text-danger ">MOST VISITED DESINATION IN UGANDA</h1>
-                <section class="container-fluid mx-auto bg-success px-4 d-flex flex-wrap p-3">
-                    
-                    <div class="card m-2 mx-2 shadow-lg" style="width: 30rem;">
-                        <img src="img/aasaa.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Bwindi Impenetrable NP</h5>
-                          <p class="card-text">Experince Gorilla Treckking here!.</p>
-                          <a href="bwind.html" class="btn btn-primary"> Read more</a>
-                        </div>
-                    </div>
-                      <div class="card m-2 mx-2 shadow-lg" style="width: 30rem;">
-                        <img src="img/elizabeth.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">QueenElizabeth NP</h5>
-                          <p class="card-text">Enjoy game drives, boat cruise, tree climbing lions.</p>
-                          <a href="elizabeth.html" class="btn btn-primary"> Read more</a>
-                        </div>
-                      </div>
-                      <div class="card m-2 mx-2 shadow-lg" style="width: 30rem;">
-                        <img src="img/WATER FALLS MUR.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Murchison Falls NP</h5>
-                          <p class="card-text">.</p>
-                          <a href="murch.html" class="btn btn-primary"> Read more</a>
-                        </div>
-                      </div>
-                      <div class="card m-2 mx-2 shadow-lg" style="width: 30rem;">
-                        <img src="img/mburo 1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Lake Mburo National Park</h5>
-                          <p class="card-text">.</p>
-                          <a href="mburo.html" class="btn btn-primary"> Read more</a>
-                        </div>
-                      </div>
-                      <div class="card m-2 mx-2 shadow-lg" style="width: 30rem;">
-                        <img src="img/kibale1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">kibale Forest National Park</h5>
-                          <p class="card-text">.</p>
-                          <a href="#" class="btn btn-primary"> Read more</a>
-                        </div>
-                      </div>
-                      <div class="card m-2 mx-2 shadow-lg" style="width: 30rem;">
-                        <img src="img/Kidepo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Kidepo Valley National Park</h5>
-                          <p class="card-text"></p>
-                          <a href="kidepo.html" class="btn btn-primary"> Read more</a>
-                        </div>
-                      </div> 
-                  </section>
+        <h1 class="text-center  " style="color: #2E7D32;">MOST VISITED DESTINATIONS IN UGANDA</h1>
+
+        <section class="container-fluid  px-4 d-flex flex-wrap justify-content-center align-items-center p-3" style="max-width: 1200px; margin: auto; ">
+            <div class="card m-2 shadow-lg" style="width: 25rem;">
+                <img src="img/aasaa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bwindi Impenetrable NP</h5>
+                    <p class="card-text">Experience Gorilla Trekking here!</p>
+                    <a href="bwind.html" class="btn btn-primary"> Read more</a>
+                </div>
+            </div>
+            <div class="card m-2 shadow-lg" style="width: 25rem;">
+                <img src="img/elizabeth.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Queen Elizabeth NP</h5>
+                    <p class="card-text">Enjoy game drives, boat cruise, tree climbing lions.</p>
+                    <a href="elizabeth.html" class="btn btn-primary"> Read more</a>
+                </div>
+            </div>
+            <div class="card m-2 shadow-lg" style="width: 25rem;">
+                <img src="img/WATER FALLS MUR.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Murchison Falls NP</h5>
+                    <p class="card-text"></p>
+                    <a href="murch.html" class="btn btn-primary"> Read more</a>
+                </div>
+            </div>
+            <div class="card m-2 shadow-lg" style="width: 25rem;">
+                <img src="img/mburo 1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lake Mburo National Park</h5>
+                    <p class="card-text"></p>
+                    <a href="mburo.html" class="btn btn-primary"> Read more</a>
+                </div>
+            </div>
+            <div class="card m-2 shadow-lg" style="width: 25rem;">
+                <img src="img/kibale1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kibale Forest National Park</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary"> Read more</a>
+                </div>
+            </div>
+            <div class="card m-2 shadow-lg" style="width: 25rem;">
+                <img src="img/Kidepo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kidepo Valley National Park</h5>
+                    <p class="card-text"></p>
+                    <a href="kidepo.html" class="btn btn-primary"> Read more</a>
+                </div>
+            </div>
+        </section>
+        
                 
             
         <!-- Destination End -->
