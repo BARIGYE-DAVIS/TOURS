@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
     <head>
         <meta charset="utf-8">
@@ -30,33 +30,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        <style>
-            /* Disable text selection */
-            body {
-                -webkit-user-select: none; /* Safari */
-                -moz-user-select: none; /* Firefox */
-                -ms-user-select: none; /* Internet Explorer/Edge */
-                user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-            }
-        </style>
-            <script>
-                // Disable right-click
-                document.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                });
-            
-                // Disable copy and show alert
-                document.addEventListener('copy', function(e) {
-                    e.preventDefault();
-                    alert('Copying content is not allowed.');
-                });
-            
-                // Disable cut and show alert
-                document.addEventListener('cut', function(e) {
-                    e.preventDefault();
-                    return('Cutting content is not allowed.');
-                });
-            </script>
+        
     </head>
 
     <body class="">
@@ -99,7 +73,8 @@
                         <a href="uganda.html" class="nav-item nav-link">Uganda Destinations</a>
                         <a href="packages.html" class="nav-item nav-link">Packages</a>
                         <a href="Blog.html" class="nav-item nav-link">Blog</a>
-                        
+                             <a href="contact.html" class="nav-item nav-link"></a>
+
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safaris</a>
                             <div class="dropdown-menu m-0">
@@ -183,8 +158,54 @@
                 </div>
             </div>
             <!-- Carousel End -->
+
         </div>
-        <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);display: none;">
+           <!-- Include header using JavaScript -->
+ <div id="header-placeholder"></div>
+
+ <!-- Your other content -->
+ <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'header-placeholder'
+        );
+    }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+ <script>
+     // Load the header content
+     fetch('head.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('header-placeholder').innerHTML = data;
+             applyLanguage();
+         });
+
+     // Function to apply the saved language
+     function applyLanguage() {
+         const savedLanguage = localStorage.getItem('language');
+         if (savedLanguage) {
+             // Assuming you have a function to set the language
+             setLanguage(savedLanguage);
+         }
+     }
+
+     // Function to set the language and save it to localStorage
+     function setLanguage(language) {
+         // Your logic to change the language
+         // For example, you might load a translation file or change text content
+         localStorage.setItem('language', language);
+     }
+
+     // Example of setting the language when a user selects a language
+     document.getElementById('language-selector').addEventListener('change', function() {
+         setLanguage(this.value);
+     });
+ </script>
+         <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);display: none;">
             <div class="container">
                 <div class="position-relative rounded-pill w-100 mx-auto p-5" style="background: rgba(19, 53, 123, 0.8);">
                     <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
@@ -1777,7 +1798,7 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
+      
         
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
