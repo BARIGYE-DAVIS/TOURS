@@ -31,15 +31,15 @@
 
     <body>
 
-        <!-- Spinner Start -->
+        <!-- Spinner Start
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
+         Spinner End -->
 
-        <!-- Topbar Start -->
+        <!-- Topbar Start -
         <div class="container-fluid bg-primary px-5 d-none d-lg-block">
             <div class="row gx-0">
                 <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
@@ -68,7 +68,53 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
+        <!-- language switcher-->
+<div id="header-placeholder" class="my-2 mx-5 text-success "></div>
+
+<!-- Your other content -->
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+       new google.translate.TranslateElement(
+           {pageLanguage: 'en'},
+           'header-placeholder'
+       );
+   }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+    // Load the header content
+    fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            applyLanguage();
+        });
+
+    // Function to apply the saved language
+    function applyLanguage() {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            // Assuming you have a function to set the language
+            setLanguage(savedLanguage);
+        }
+    }
+
+    // Function to set the language and save it to localStorage
+    function setLanguage(language) {
+        // Your logic to change the language
+        // For example, you might load a translation file or change text content
+        localStorage.setItem('language', language);
+    }
+
+    // Example of setting the language when a user selects a language
+    document.getElementById('language-selector').addEventListener('change', function() {
+        setLanguage(this.value);
+    });
+</script>
+<!-- stops-->
         <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->

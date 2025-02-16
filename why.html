@@ -34,70 +34,60 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        /* Disable text selection */
-        body {
-            -webkit-user-select: none; /* Safari */
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
-        }
-            .sidebar {
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #f8f9fa;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            }
-        .sidebar h2 {
-            color: #007bff;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin: 10px 0;
-        }
-        .sidebar ul li a {
-            text-decoration: none;
-            color: #343a40;
-        }
-        .sidebar ul li a:hover {
-            color: #007bff;
-        }
-        .content {
-            margin-left: 270px; /* Adjust based on sidebar width */
-            padding: 20px;
-        }
-        
-    </style>
-        <script>
-            // Disable right-click
-            document.addEventListener('contextmenu', function(e) {
-                e.preventDefault();
-            });
-        
-            // Disable copy and show alert
-            document.addEventListener('copy', function(e) {
-                e.preventDefault();
-                alert('Copying content is not allowed.');
-            });
-        
-            // Disable cut and show alert
-            document.addEventListener('cut', function(e) {
-                e.preventDefault();
-                alert('Cutting content is not allowed.');
-            });
-        </script>
+   
     
         
     
 </head>
 <body>
+
+
+    <!-- language switcher-->
+<div id="header-placeholder" class="my-2 mx-5 text-success "></div>
+
+<!-- Your other content -->
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+       new google.translate.TranslateElement(
+           {pageLanguage: 'en'},
+           'header-placeholder'
+       );
+   }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+    // Load the header content
+    fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            applyLanguage();
+        });
+
+    // Function to apply the saved language
+    function applyLanguage() {
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage) {
+            // Assuming you have a function to set the language
+            setLanguage(savedLanguage);
+        }
+    }
+
+    // Function to set the language and save it to localStorage
+    function setLanguage(language) {
+        // Your logic to change the language
+        // For example, you might load a translation file or change text content
+        localStorage.setItem('language', language);
+    }
+
+    // Example of setting the language when a user selects a language
+    document.getElementById('language-selector').addEventListener('change', function() {
+        setLanguage(this.value);
+    });
+</script>
+<!-- stops-->
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
