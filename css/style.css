@@ -1237,6 +1237,9 @@
     color: var(--bs-primary);
 }
 
+span .text-white {
+    color: green;
+}
 /*** Footer End ***/
 
 /*** copyright Start ***/
