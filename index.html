@@ -31,6 +31,14 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         
+<style>
+    .custom-border {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+    }
+</style>
+        
     </head>
 
     <body class="">
@@ -1359,46 +1367,74 @@
                     <div class="col-lg-6 mx-auto">
                         <h1 class="text-white mb-3">Book A Tour Deals</h1>
                         <p class="text-white mb-4">Get  Your First Adventure with Calm Africa Safaris. Get More Deal Offers Here.</p>
-                        <form action="https://formspree.io/f/xldrqeey" method="post">
-                           
+                        <form id="myForm" class="bg-white px-3 py-3 rounded shadow-lg" action="https://formspree.io/f/xldrqeey" method="post">
                             <div class="form-group">
-                                <label for="name" class="text-white">Full Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <label for="name" class="text-warning p-2">Full Name:</label>
+                                <input type="text" class="form-control custom-border p-2" id="name" name="name">
                             </div>
-            
+                        
                             <div class="form-group">
-                                <label for="email" class="text-white">Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <label for="email" class="text-warning p-2">Email:</label>
+                                <input type="email" class="form-control custom-border p-2" id="email" name="email">
                             </div>
-            
+                        
                             <div class="form-group">
-                                <label for="phone" class="text-white">Phone Number:</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                <label for="phone" class="text-warning p-2">Phone Number:</label>
+                                <input type="tel" class="form-control custom-border p-2" id="phone" name="phone">
                             </div>
-            
+                        
                             <div class="form-group">
-                                <label for="tourDate" class="text-white">Preferred Tour Date:</label>
-                                <input type="date" class="form-control" id="tourDate" name="tourDate" required>
+                                <label for="tourDate" class="text-warning p-2">Preferred Tour Date:</label>
+                                <input type="date" class="form-control custom-border p-2" id="tourDate" name="tourDate">
                             </div>
-            
+                        
                             <div class="form-group">
-                                <label for="groupSize" class="text-white">Number of People:</label>
-                                <input type="number" class="form-cmburontrol" id="groupSize" name="groupSize" min="1" required>
+                                <label for="groupSize" class="text-warning p-2">Number of People:</label>
+                                <input type="number" class="form-control custom-border p-2" id="groupSize" name="groupSize" min="1">
                             </div>
-            
+                        
                             <div class="form-group">
-                                <label for="preferences" class="text-white">Tour Preferences:</label>
-                                <textarea class="form-control" id="preferences" name="preferences" rows="4" placeholder="e.g., nature, history, etc."></textarea>
+                                <label for="preferences" class="text-warning p-2">Tour Preferences:</label>
+                                <textarea class="form-control custom-border p-2" id="preferences" name="preferences" rows="4" placeholder="e.g., nature, history, etc."></textarea>
                             </div>
-            
-                            <button type="submit" class="btn btn-success m-2">Submit Request</button>
+                        
+                            <button type="submit" class="btn btn-warning m-2 text-white">Submit Request</button>
                         </form>
             
                     </div>
                 </div>
             </div>
         </div>
-     
+        <script>
+           /* document.getElementById('myForm').addEventListener('submit', function(event) {
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var phone = document.getElementById('phone').value.trim();
+                var tourDate = document.getElementById('tourDate').value.trim();
+                var groupSize = document.getElementById('groupSize').value.trim();
+                var preferences = document.getElementById('preferences').value.trim();
+        
+                if (name === "") {
+                    alert("Please fill in your name");
+                    event.preventDefault();
+                } else if (email === "") {
+                    alert("Please fill in your email");
+                    event.preventDefault();
+                } else if (phone === "") {
+                    alert("Please fill in your phone number");
+                    event.preventDefault();
+                } else if (tourDate === "") {
+                    alert("Please fill in your preferred tour date");
+                    event.preventDefault();
+                } else if (groupSize === "") {
+                    alert("Please fill in the number of people");
+                    event.preventDefault();
+                } else if (preferences === "") {
+                    alert("Please fill in your tour preferences");
+                    event.preventDefault();
+                }
+            });*/
+        </script>
         <!-- Tour Booking End -->
 
         <!-- Travel Guide Start -->
@@ -1810,6 +1846,7 @@
         
 
         <!-- Template Javascript -->
+         <script src="validate.js"> </script>
         <script src="js/main.js"></script>
     </body>
 
