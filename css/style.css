@@ -1343,3 +1343,10 @@ font-size: 20px;
     background: linear-gradient(rgb(0,0,0,0.507), rgb(0,0,0,0.438)), url(../img/mbu5.jpg);
     background-size: cover;
 }
+
+/* Add this to your main stylesheet */
+.custom-border {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
