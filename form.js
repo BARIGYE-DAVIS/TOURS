@@ -1,10 +1,9 @@
-// form.js
 document.addEventListener("DOMContentLoaded", function() {
     const formHTML = `
         <div class="col-lg-6 mx-auto">
             <h1 class="text-white mb-3">Book A Tour Deals</h1>
             <p class="text-white mb-4">Get Your First Adventure with Calm Africa Safaris. Get More Deal Offers Here.</p>
-            <form id="myForm" class="bg-white px-3 py-3 rounded shadow-lg" action="https://formspree.io/f/xldrqeey" method="post">
+            <form id="myForm" class="bg-white px-3 py-3 rounded shadow-lg" method="post">
                 <div class="form-group">
                     <label for="name" class="text-warning p-2">Full Name:</label>
                     <input type="text" class="form-control custom-border p-2" id="name" name="name">
@@ -36,4 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Inject the form HTML into the element with the ID 'form-container'
     document.getElementById('form-container').innerHTML = formHTML;
+
+    // Add event listener for form submission
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        alert('Your request has been submitted successfully!');
+    });
 });
